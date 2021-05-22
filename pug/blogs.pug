@@ -5,3 +5,49 @@ html(lang="en")
         title Blog
     body 
         include components/header.pug
+
+        main.blogs-main 
+            section.blogs-news-container 
+                .blogs-main-new
+                    h3 Noticias
+                    .blogs-new-img-container
+                        img(src="assets/main-news-img.png", alt="")
+                    .blogs-news-info-container
+                        h2 Título del Blogpost
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsam ducimus magnam nesciunt.
+                        a(href="").blogs-button Leer más
+            section.blogs-posts-container 
+                h3 Últimos blogposts
+                article.post-container 
+                    img(src="assets/post-1.png", alt="")
+                    h4 Titulo del Blogpost
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed.
+                    a(href="").blogs-button Leer más
+                article.post-container  
+                    img(src="assets/post-2.png", alt="")
+                    h4 Titulo del Blogpost 
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed. 
+                    a(href="").blogs-button Leer más
+                article.post-container  
+                    img(src="assets/post-3.png", alt="")
+                    h4 Titulo del Blogpost
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed. 
+                    a(href="").blogs-button Leer más
+                article.post-container 
+                    img(src="assets/post-1.png", alt="")
+                    h4 Titulo del Blogpost
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed.
+                    a(href="").blogs-button Leer más
+                article.post-container  
+                    img(src="assets/post-2.png", alt="")
+                    h4 Titulo del Blogpost 
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed. 
+                    a(href="").blogs-button Leer más
+                article.post-container  
+                    img(src="assets/post-3.png", alt="")
+                    h4 Titulo del Blogpost
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vero earum consectetur blanditiis? Eveniet sed. 
+                    a(href="").blogs-button Leer más
+               
+
+        include components/footer.pug

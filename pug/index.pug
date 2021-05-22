@@ -2,12 +2,12 @@ include components/config.pug
 doctype html
 html(lang="en")
     include components/head.pug
-        title Index
-    body 
+        title Home
+    body.home-body 
         include components/header.pug
             
         main.home-main
             section 
                 p.home-main-text Conoce las novedades y noticias del Mundo Tech 
-                button Entra Ya!
-                    a(href="blogs.html") 
+                a(href="blogs.html")
+                    button Entra Ya!

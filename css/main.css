@@ -4,11 +4,6 @@
 
 body {
   font-family: "Roboto mono", monospace;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +12,18 @@ a {
   text-decoration: none;
   display: inline;
   color: black;
+}
+
+.blogs-button {
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.blogs-button:hover {
+  background-color: #47cfac;
+  color: #e6e9ed;
+  transition: 0.3s;
 }
 
 header {
@@ -69,6 +76,27 @@ nav .nav__profile-link a {
   color: black;
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #22272d;
+  border-top: 35px solid #47cfac;
+  text-align: center;
+  margin-bottom: -20px;
+}
+footer p {
+  color: #e6e9ed;
+  padding: 30px;
+}
+
+.home-body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .home-main {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
@@ -109,6 +137,53 @@ nav .nav__profile-link a {
   transition: 0.3s;
   color: white;
   transform: scale(1.1);
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  background-color: #e6e9ed;
+  padding: 0 70px 40px;
+}
+.blogs-news-container .blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+.blogs-news-container .blogs-main-new .blogs-new-img-container {
+  grid-column: 1;
+}
+.blogs-news-container .blogs-main-new .blogs-new-img-container img {
+  width: 85%;
+}
+.blogs-news-container .blogs-main-new .blogs-news-info-container {
+  grid-column: 2;
+}
+.blogs-news-container .blogs-main-new .blogs-news-info-container h2 {
+  margin-bottom: 35px;
+}
+
+.blogs-posts-container {
+  padding: 0 70px 40px;
+}
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #e6e9ed;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.blogs-posts-container .post-container {
+  display: inline-block;
+  padding-left: 10px;
+  max-width: 32.5%;
+  margin-bottom: 50px;
+}
+.blogs-posts-container .post-container p, .blogs-posts-container .post-container h4 {
+  margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
