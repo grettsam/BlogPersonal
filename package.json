@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "node-sass": "^6.0.0",
+    "pug": "^3.0.2"
+  },
+  "name": "blog",
+  "description": "Blog personal con Pug y SCSS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastián Infante",
+  "license": "ISC"
+}
