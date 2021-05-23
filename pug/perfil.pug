@@ -1,7 +1,31 @@
-include components/config.pug
+
 doctype html
 html(lang="en")
     include components/head.pug
         title Perfil
     body 
         include components/header.pug
+
+        main.perfil-container 
+            section.info-container 
+                img(src="assets/Cover.png", alt="")
+                .info-container-texto 
+                    h2 Hola !
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nesciunt reiciendis totam corrupti libero, fugit voluptatibus sint esse dicta officia cumque officiis mollitia modi ab magnam eveniet veritatis ratione earum?
+            section.proyects-container
+                h3 Proyecto
+                .proyects-container-works.grid-container
+                    article
+                        h3 Texto
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque itaque aliquam nemo, dolore enim, sed molestias suscipit eaque officiis consectetur culpa, quod vitae quo adipisci dignissimos qui nobis! Odio impedit adipisci fugiat quia at soluta molestias, sit harum magni accusamus voluptate voluptates reprehenderit natus? Necessitatibus excepturi tenetur fugiat saepe.
+                    article
+                        h3 Texto
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque itaque aliquam nemo, dolore enim, sed molestias suscipit eaque officiis consectetur culpa, quod vitae quo adipisci dignissimos qui nobis! Odio impedit adipisci fugiat quia at soluta molestias, sit harum magni accusamus voluptate voluptates reprehenderit natus? Necessitatibus excepturi tenetur fugiat saepe.
+                    article
+                        h3 Texto
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque itaque aliquam nemo, dolore enim, sed molestias suscipit eaque officiis consectetur culpa, quod vitae quo adipisci dignissimos qui nobis! Odio impedit adipisci fugiat quia at soluta molestias, sit harum magni accusamus voluptate voluptates reprehenderit natus? Necessitatibus excepturi tenetur fugiat saepe.
+
+
+        include components/contact.pug
+
+        include components/footer.pug

@@ -1,7 +1,22 @@
-include components/config.pug
 doctype html
 html(lang="en")
     include components/head.pug
         title Blog
     body 
         include components/header.pug
+
+        main
+            section.blogpost-img-container.grid-container 
+                img(src="assets/main-news-img.png", alt="")
+            section.blogpost-main-container 
+                .grid-container 
+                    h3 Noticias
+                    article 
+                        h1 Título del Blogpost
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime temporibus hic dolorem, quod fugiat error perferendis culpa magni placeat sequi? Ut doloremque voluptatibus aperiam consectetur saepe itaque reiciendis excepturi, dignissimos unde doloribus laudantium ratione aliquam et, repellendus molestias quidem alias.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi fugit sit! Esse dolores doloribus soluta, fuga autem architecto, est vero ducimus cumque qui rem voluptate molestiae laboriosam, id rerum!
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis dolorem expedita provident repudiandae atque, rerum esse velit quae autem, ut consequatur assumenda accusantium. Quia maxime aliquam doloribus tempora vitae!
+            
+        include components/contact.pug
+
+        include components/footer.pug
